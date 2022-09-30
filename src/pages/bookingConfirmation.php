@@ -10,7 +10,7 @@ require "../classes/hotelClass.php";
 require "../classes/bookingClass.php";
 require "../calculations/calculateDays.php";
 
-$pageTitle = "Checkout";
+$pageTitle = "Hotel Booking. Let's get you Checked In";
 session_start();
 
 $hotelChoice;

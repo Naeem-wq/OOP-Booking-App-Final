@@ -10,7 +10,7 @@ require "../classes/hotelClass.php";
 require "../calculations/calculateDays.php";
 
 
-$pageTitle = "Choose Hotel";
+$pageTitle = "Hotel Booking. Let's compare and book.";
 session_start();
 
 if (isset($_POST['detailsSubmission'])) {

@@ -2,7 +2,7 @@
 
 <?php
 
-$pageTitle = "Hotel Booking. Let's compare and book.";
+$pageTitle = "Hotel Booking. Please Create an account.";
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
