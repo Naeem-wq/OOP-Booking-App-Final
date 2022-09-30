@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.firstHeader {
+  background-image: url("https://secure.s.forbestravelguide.com/img/properties/belmond-la-samanna/belmond-la-samanna-specialty-suite-main-bedroom.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: #216178;
+}
+
+/* ======================== */
+
+.headerTitle {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 100px;
+  font: 1500 10px Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  color: #216178;
+}
+
+.mainSection {
+  margin: 5em;
+}
+
+.formStyle {
+  padding: 60px;
+  background-color: rgba(173, 216, 230, 0.7);
+  border-radius: 20px;
+}
+
+.formTitle {
+  margin-bottom: 1em;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 2.5em;
+}
+
+.input {
+  text-align: center;
+  padding: 10px 145px;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  color: #fff;
+  background-color: transparent;
+  outline: 2px solid #fff;
+}
+
+.input-label {
+  font-weight: bolder;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transform-origin: left;
+  transition: transform .25s;
+}
+
+.input:focus~.input-label,
+.input:valid~.input-label {
+  transform: translate(0, -30px) scale(.8);
+  color: #216178;
+}
+
+.input:is(:focus, :valid) {
+  outline-color: #216178;
+}
+
+.inputDate {
+  font-weight: bolder;
+  display: flex;
+  gap: 40px;
+
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 2.5em;
+  border: solid white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.submitBtn {
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 20px 220px;
+  background-color: #216178;
+  border: none;
+  border-radius: 10px;
+}
+
+.submitBtn:hover {
+  background-color: #215061;
+}
+
+/********************************* 
+           Second Page
+*********************************/
+
+.secondTitle {
+  text-align: center;
+  padding: 15px;
+  background-color: #216178c5;
+}
+
+.secondHeader {
+  background-image: url("https://media.architecturaldigest.com/photos/6076e03ab33c7ee1062dab6c/16:9/w_2560%2Cc_limit/Fairmont%2520Scottsdale%2520Princess%2520-%2520Princess%2520Pool%2520-%25201418704.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.hotelSelect {
+  margin: 2em 8em;
+  border: solid;
+  padding: 30px 200px;
+  border-radius: 20px;
+  background-color: #215061;
+}
+
+.bookBtn {
+  margin-top: 1.8%;
+  margin-bottom: 8%;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 10px 100px;
+  background-color: #0abeff;
+  border: none;
+  border-radius: 10px;
+}
+
+.bookBtn:hover {
+  background-color: #02a0d9;
+}
+
+.images {
+  width: 492px;
+  height: 293px;
+  border-radius: 96px;
+}
+
+/************************
+      Slide hovers
+************************/
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 100px;
+  border: 4px solid #fff;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  background-color: rgb(0 0 0 / 25%);
+  opacity: 0;
+  transition: opacity .5s;
+  border-radius: 100px;
+}
+
+.container:hover::after {
+  opacity: 1;
+  border-radius: 100px;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 95px;
+  object-fit: cover;
+  animation: cycle 2s linear infinite;
+  animation-play-state: paused;
+}
+
+.container:hover .image {
+  animation-play-state: running;
+}
+
+.image-1 {
+  z-index: 4;
+  animation-delay: 1s;
+}
+
+.image-2 {
+  z-index: 3;
+  animation-delay: 3s;
+}
+
+.image-3 {
+  z-index: 2;
+  animation-delay: 5s;
+}
+
+.image-4 {
+  z-index: 1;
+  animation-delay: 7s;
+}
+
+@keyframes cycle {
+  from {
+    visibility: visible;
+    z-index: 4;
+  }
+
+  to {
+    visibility: hidden;
+    z-index: 1;
+  }
+}
+
+/********************************* 
+           Third Page
+*********************************/
+
+.thirdHeader {
+  background-image: url("https://cdn-production.checkfront.com/wp-content/uploads/2022/04/img_626aab63d10cc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 78vh;
+  width: 100%;
+  border-radius: 0px 0px 100px 100px;
+  margin-bottom: 2em;
+}
+
+.thankYou {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.confirmDetails {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 2em;
+}
+
+.infoBox {
+  border: solid;
+  border-radius: 20px;
+}
+
+.bookingInfo {
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.details {
+  margin: 25px;
+}
+
+.letsBook {
+  text-align: center;
+}
+
+.confirmBtn {
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 10px 100px;
+  background-color: #0abeff;
+  border: none;
+  border-radius: 10px;
+  margin: 2em;
+
+  cursor: pointer;
+  transition: width .5s,
+    border-radius .5s;
+}
+
+.confirmBtn:hover {
+  background-color: #02a0d9;
+}
+
+@media screen and (max-width: 480px) {
+  .confirmDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 1em;
+    margin: auto;
+  }
+}
+
+/* ////////////////// */
+
+.signUpPage {
+  background-image: url("http://bluelagoonhotel.co.za/wp-content/uploads/2020/10/Plan-your-business-trip-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.singIn {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.singInSection {
+  margin: 2.3em;
+}
+
+.formTitle2 {
+  margin-bottom: 2em;
+  font-weight: bolder;
+}
+
+.formStyle2 {
+  padding: 60px;
+  background-color: rgba(225, 211, 132, 0.582);
+  border-radius: 20px;
+}
+
+.submitBtn1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 20px 186px;
+  background-color: #216178;
+  border: none;
+  border-radius: 10px;
+}
+
+.submitBtn1:hover {
+  background-color: #215061;
+}
+
+/* //////////////// */
+
+
+.copyright {
+  text-align: center;
+}

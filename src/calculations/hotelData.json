@@ -1,0 +1,45 @@
+[
+    {
+        "id" : 1,
+        "name" : "President Hotel",
+        "rate" : 1573,
+        "features" : [
+            "Lounge and Bar.",
+            "Large private garden reserved for hotel guests.",
+            "Live Entertainment (Musicians/Bands/Comedians)",
+            "Spa and Beauty cente.r",
+            "Valet Parking and Car Wash.",
+            "Kids private play area.",
+            "Universal Accesibility for all disabled."
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "O' Two Hotel",
+        "rate" : 4104,
+        "features" : [
+            "Offering views of Table Mountain.",
+            "Rooftop terrace with an outdoor pool flanked by sunloungers.",
+            "Walking distance from the beach.",
+            "Laundry services.",
+            "Kitchens in some rooms.",
+            "This high end hotel is 1 km from the V&A Waterfront along the South Atlantic Ocean, 2 km from Two Oceans Aquarium and 23 km from Cape Town International Airport."
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Bliss Boutique Hotel",
+        "rate" : 2786,
+        "features" : [
+            "Solar heated private pool.",
+            "Cocktail bar.",
+            "Private lounge areas.",
+            "We have two spectacular viewing decks, one just outside our bar where you can relax in a hammock-chair and sip on a sundowner, the other on the roof where you can enjoy Table Mountain in all its glory.",
+            "Your room card allows you access to our private beach.",
+            "We offer on site secure parking."
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    }
+]
